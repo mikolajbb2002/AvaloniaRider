@@ -1,0 +1,29 @@
+<Window x:Class="BikeRental.Views.MainWindow"
+        xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="using:BikeRental.ViewModels"
+        Title="BasicViewLocatorSample"
+        d:DesignHeight="450"
+        d:DesignWidth="800"
+        x:CompileBindings="True"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        mc:Ignorable="d">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+
+    <Grid RowDefinitions="*,Auto" Background="#888888">
+        <TransitioningContentControl Content="{Binding CurrentPage}" />
+
+        <StackPanel Grid.Column="0"
+            Grid.Row="1" Orientation="Horizontal" Spacing=""
+            Height=""
+                    HorizontalAlignment="Center">
+            <Button Command="{Binding NavigateNextCommand}" Content="Next" />
+        </StackPanel>
+    </Grid>
+</Window>
