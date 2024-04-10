@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="BikeRental/App.axaml" value="BikeRental/BikeRental.csproj" />
+        <entry key="BikeRental/Views/FirstPageView.axaml" value="BikeRental/BikeRental.csproj" />
+        <entry key="BikeRental/Views/MainWindow.axaml" value="BikeRental/BikeRental.csproj" />
+        <entry key="BikeRental/Views/SecondViewPage.axaml" value="BikeRental/BikeRental.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

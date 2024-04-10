@@ -65,5 +65,6 @@ namespace BikeRental.ViewModels
             //  /!\ Be aware that we have no check if the index is valid. You may want to add it on your own. /!\
             CurrentPage = Pages[index];
         }
+        
     }
 }
