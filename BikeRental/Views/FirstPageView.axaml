@@ -1,3 +1,4 @@
+
 <UserControl x:Class="BikeRental.Views.FirstPageView"
              xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -18,13 +19,16 @@
                    TextAlignment="Center"
                    FontSize="16"
                    FontWeight="SemiBold"
+                   Foreground="LightBlue"
                    Text="{Binding Title}"
                    TextWrapping="Wrap" />
         <TextBlock VerticalAlignment="Center"
                    TextAlignment="Center"
                    FontSize="16"
+                   Foreground="LightBlue"
                    Text="{Binding Message}"
                    TextWrapping="Wrap" />
     </StackPanel>
     
 </UserControl>
+

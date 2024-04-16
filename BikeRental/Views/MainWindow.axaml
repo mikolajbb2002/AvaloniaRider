@@ -16,14 +16,14 @@
         <vm:MainWindowViewModel />
     </Design.DataContext>
 
-    <Grid RowDefinitions="*,Auto" Background="#888888">
+    <Grid RowDefinitions="*,Auto" Background="MidnightBlue">
         <TransitioningContentControl Content="{Binding CurrentPage}" />
 
         <StackPanel Grid.Column="0"
             Grid.Row="1" Orientation="Horizontal" Spacing=""
             Height=""
                     HorizontalAlignment="Center">
-            <Button Command="{Binding NavigateNextCommand}" Content="Next" />
+            <Button Command="{Binding NavigateNextCommand}" Foreground="LightBlue" Content="Next" />
         </StackPanel>
     </Grid>
 </Window>

@@ -15,15 +15,17 @@ namespace BikeRental.ViewModels
             var canNavNext = this.WhenAnyValue(x => x.CurrentPage.CanNavigateNext);
             
 
-            NavigateNextCommand = ReactiveCommand.Create(NavigateNext, canNavNext);
+            NavigateNextCommand = ReactiveCommand.Create(NavigateNext);
             
         }
 
         // A read.only array of possible pages
         private readonly PageViewModelBase[] Pages = 
-        { 
+        {
             new FirstPageViewModel(),
+            new AddUserPageViewModel(),
             new SecondPageViewModel(),
+            new ShowAllPageViewModel(),
         };
 
         // The default is the first page
@@ -51,20 +53,8 @@ namespace BikeRental.ViewModels
             //  /!\ Be aware that we have no check if the index is valid. You may want to add it on your own. /!\
             CurrentPage = Pages[index];
         }
-
-        /// <summary>
-        /// Gets a command that navigates to the previous page
-        /// </summary>
-        public ICommand NavigatePreviousCommand { get; }
-
-        private void NavigatePrevious()
-        {
-            // get the current index and subtract 1
-            var index = Pages.IndexOf(CurrentPage) - 1;
-
-            //  /!\ Be aware that we have no check if the index is valid. You may want to add it on your own. /!\
-            CurrentPage = Pages[index];
-        }
+        
+        
         
     }
 }

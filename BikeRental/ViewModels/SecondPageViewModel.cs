@@ -6,19 +6,12 @@ namespace BikeRental.ViewModels;
 
 public class SecondPageViewModel : PageViewModelBase
 {
+    
     public SecondPageViewModel()
     {
-        //ShowDialog = new Interaction<MainWindowViewModel, DataFormViewModel?>();
+       
 
-        Submit_Clickedd = ReactiveCommand.CreateFromTask(async () =>
-        {
-            
-            //var store = new MainWindowViewModel();
-            Console.WriteLine("Otwieranie neego okna poprzez cnacisniecie ");
-            Console.WriteLine("to jest wpisane w okienku" + TxtName);
-
-            // var result = await ShowDialog.Handle(store);
-        });
+        
     }
 
     public ICommand Submit_Clickedd { get; }
@@ -34,10 +27,12 @@ public class SecondPageViewModel : PageViewModelBase
     /// </summary>
     public string Message => "Press \"Next\" to register yourself.";
 
-    // This is our first page, so we can navigate to the next page in any case
+    
+    public ICommand NavigateNextCommand { get; }
     public override bool CanNavigateNext
+    
     {
-        get => false;
+        get => true;
         protected set => throw new NotSupportedException();
     }
 }

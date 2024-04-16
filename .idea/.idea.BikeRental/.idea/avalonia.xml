@@ -4,9 +4,13 @@
     <option name="projectPerEditor">
       <map>
         <entry key="BikeRental/App.axaml" value="BikeRental/BikeRental.csproj" />
+        <entry key="BikeRental/Views/AddUserPage.axaml" value="BikeRental/BikeRental.csproj" />
+        <entry key="BikeRental/Views/AddUserPageView.axaml" value="BikeRental/BikeRental.csproj" />
         <entry key="BikeRental/Views/FirstPageView.axaml" value="BikeRental/BikeRental.csproj" />
         <entry key="BikeRental/Views/MainWindow.axaml" value="BikeRental/BikeRental.csproj" />
         <entry key="BikeRental/Views/SecondViewPage.axaml" value="BikeRental/BikeRental.csproj" />
+        <entry key="BikeRental/Views/ShowAllPageView.axaml" value="BikeRental/BikeRental.csproj" />
+        <entry key="BikeRental/Views/ThirdPageView.axaml" value="BikeRental/BikeRental.csproj" />
       </map>
     </option>
   </component>
