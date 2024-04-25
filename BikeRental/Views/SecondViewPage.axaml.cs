@@ -16,6 +16,7 @@ namespace BikeRental.Views
         public SecondPageView()
         {
             InitializeComponent();
+            
         }
 
         

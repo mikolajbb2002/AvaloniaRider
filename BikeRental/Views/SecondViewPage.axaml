@@ -12,38 +12,28 @@
     <Design.DataContext>
         <vm:SecondPageViewModel />
     </Design.DataContext>
-
-    <StackPanel Orientation="Vertical" Width="300"  Height="350" Background="#5669A9">
-        <StackPanel Spacing="5" Orientation="Vertical" Width="200" Height="300" Background="#5669A9" >
-                       <TextBlock></TextBlock>
-                         <TextBlock Foreground="MidnightBlue" HorizontalAlignment="Center" VerticalAlignment="Top" TextAlignment="Center" FontWeight="Bold">ADD NEW RENTAL </TextBlock>
-                        <TextBlock  Foreground="MidnightBlue" Text=" Frame size "/>
-                        <ComboBox Name="FrameSize" Width="200">
-                            <ComboBoxItem Content="S"/>
-                            <ComboBoxItem Content="M"/>
-                            <ComboBoxItem Content="L"/>
-                            <ComboBoxItem Content="XL"/>
-                        </ComboBox> 
-                        <TextBlock Foreground="MidnightBlue" Text="Wheel size"/>
-                        <ComboBox Name="WheelSize" Width="200">
-                            <ComboBoxItem Content="26'"/>
-                            <ComboBoxItem Content="27,5'"/>
-                            <ComboBoxItem Content="29'"/>
-                        </ComboBox> 
-                        <TextBlock Foreground="MidnightBlue" Text="Choose model"/>
-                        <ComboBox Name="BikeModel" Width="200">
-                            <ComboBoxItem Content="Trek Fuel 2019"/>
-                            <ComboBoxItem Content="Kross Moon 3.0 2021"/>
-                            <ComboBoxItem Content="Scott Ransom 930 2022"/>
-                        </ComboBox> 
-                        <TextBlock Foreground="MidnightBlue" Text="Rent Date "/>
-                        <CalendarDatePicker Name="DatePicker "/>
+    <StackPanel Orientation="Vertical" Width="450"  Height="450" Background="#5669A9">
+        <StackPanel Spacing="5" Orientation="Vertical" Width="400" Height="400" Background="#5669A9" > 
             
-                        
-                        <Button Command="{Binding Submit_Clickedd}" VerticalAlignment="Center" Foreground="LightBlue" Background="MidnightBlue" Width="100" Content="Submit"></Button>
-      </StackPanel>                      
-</StackPanel>
-                    
+    <TextBlock></TextBlock>
+    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" TextAlignment="Center" FontWeight="Bold" Padding="5" Foreground="MidnightBlue">ADD NEW USER </TextBlock>
+        
+    <TextBlock Foreground="MidnightBlue" HorizontalAlignment="Center" VerticalAlignment="Top">Podaj rozmiar ramy</TextBlock>
+    <TextBox Width="150" Text="{Binding FrameSize}"/>
+        
+    <TextBlock Foreground="MidnightBlue" HorizontalAlignment="Center" VerticalAlignment="Top">Podaj nazwisko </TextBlock>
+    <TextBox  Width="150" Text="{Binding WheelSize}"/>
+    <TextBlock Foreground="MidnightBlue" HorizontalAlignment="Center" VerticalAlignment="Top">Podaj nr PESEL </TextBlock>
+    <TextBox Width="150" Text="{Binding Date}"/>
+    <TextBlock Foreground="MidnightBlue"  HorizontalAlignment="Center" VerticalAlignment="Top">Podaj miasto </TextBlock>
+    
+        
+
+      
+    <Button HorizontalAlignment="Center" Command="{Binding ButtonOnClickCommand} " Foreground="LightBlue" Background="MidnightBlue" >Save User</Button>
+        
+    </StackPanel>
+    </StackPanel>
                 
        
       
