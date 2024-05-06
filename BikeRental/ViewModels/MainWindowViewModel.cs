@@ -25,7 +25,7 @@ namespace BikeRental.ViewModels
             new FirstPageViewModel(),
             new AddUserPageViewModel(),
             new SecondPageViewModel(),
-            new ShowAllPageViewModel(),
+           
         };
 
         // The default is the first page

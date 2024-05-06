@@ -26,7 +26,7 @@ public class SqlUsage
             }
 
             Console.WriteLine(insertQuery);
-            connection.Close();
+            connection.Close(); 
         }
     }
 
@@ -35,7 +35,7 @@ public class SqlUsage
         string connectionString = "Data Source=BikeRental.db;Version=3;";
         using (SQLiteConnection connection = new SQLiteConnection(connectionString))
         {
-            connection.Open();
+            connection.Open(); 
             string insertQuery =
                 "INSERT INTO Rental (FrameSize, WheelSize, Date) VALUES (@FrameSize, @WheelSize, @Date)";
             using (SQLiteCommand insertCommand = new SQLiteCommand(insertQuery, connection))
@@ -43,6 +43,7 @@ public class SqlUsage
                 insertCommand.Parameters.AddWithValue("@FrameSize", FrameSize);
                 insertCommand.Parameters.AddWithValue("@WheelSize", WheelSize);
                 insertCommand.Parameters.AddWithValue("@Date", Date);
+              
 
 
                 insertCommand.ExecuteNonQuery();

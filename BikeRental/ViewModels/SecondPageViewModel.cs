@@ -1,18 +1,15 @@
 using System;
 using System.Windows.Input;
-
 namespace BikeRental.ViewModels;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.ComponentModel;
 
 public partial class SecondPageViewModel : PageViewModelBase
 {
-    
-   
     public static string? FrameSize { get; set; }
     public static string? WheelSize { get; set; }
     public static string? Date { get; set; }
- 
+    public static string? Helmet { get; set; }
         
     
 
@@ -20,7 +17,7 @@ public partial class SecondPageViewModel : PageViewModelBase
     private void ButtonOnClick()
     {
         
-        if (FrameSize != null && WheelSize != null && Date != null)
+        if (FrameSize != null && WheelSize != null && Date != null )
         {
 
             SqlUsage.AddRentalToDatabase(FrameSize, WheelSize, Date);

@@ -20,12 +20,17 @@
         
     <TextBlock Foreground="MidnightBlue" HorizontalAlignment="Center" VerticalAlignment="Top">Podaj rozmiar ramy</TextBlock>
     <TextBox Width="150" Text="{Binding FrameSize}"/>
-        
-    <TextBlock Foreground="MidnightBlue" HorizontalAlignment="Center" VerticalAlignment="Top">Podaj nazwisko </TextBlock>
+    <TextBlock Foreground="MidnightBlue" HorizontalAlignment="Center" VerticalAlignment="Top">Podaj rozmiar koła </TextBlock>
     <TextBox  Width="150" Text="{Binding WheelSize}"/>
-    <TextBlock Foreground="MidnightBlue" HorizontalAlignment="Center" VerticalAlignment="Top">Podaj nr PESEL </TextBlock>
+    <TextBlock Foreground="MidnightBlue" HorizontalAlignment="Center" VerticalAlignment="Top">Podaj date  </TextBlock>
     <TextBox Width="150" Text="{Binding Date}"/>
-    <TextBlock Foreground="MidnightBlue"  HorizontalAlignment="Center" VerticalAlignment="Top">Podaj miasto </TextBlock>
+    <ComboBox Foreground="MidnightBlue" HorizontalAlignment="Center" VerticalAlignment="Top" SelectedIndex="{Binding Helmet }" >
+              <ComboBoxItem>Nie </ComboBoxItem>
+              <ComboBoxItem>Tak</ComboBoxItem>
+                                                   </ComboBox>
+    
+    
+
     
         
 
